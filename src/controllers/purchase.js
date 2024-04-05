@@ -24,7 +24,12 @@ module.exports = {
             `
         */
 
-        const data = await res.getModelList(Purchase)
+        const data = await res.getModelList(Purchase, {}, [
+            { path: "userId", select: "username firstName lastName" },
+            { path: "firmId", select: "name" },
+            { path: "categoryId", select: "name" },
+            { path: "brandId", select: "name" },
+          ])
 
         res.status(200).send({
             error: false,
