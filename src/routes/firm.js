@@ -1,0 +1,26 @@
+"use strict"
+/* -------------------------------------------------------
+    NODEJS EXPRESS | CLARUSWAY FullStack Team
+------------------------------------------------------- */
+const router = require('express').Router()
+/* ------------------------------------------------------- */
+// routes/firm:
+
+const firm = require('../controllers/firm')
+
+// const permissions = require('../middlewares/permissions')
+
+// URL: /firms
+
+router.route('/')
+    .get(firm.list)
+    .post( firm.create)
+
+router.route('/:id')
+    .get(firm.read)
+    .put(firm.update)
+    .patch(firm.update)
+    .delete( firm.delete)
+
+/* ------------------------------------------------------- */
+module.exports = router
