@@ -4,31 +4,28 @@
 ------------------------------------------------------- */
 const { mongoose } = require('../configs/dbConnection')
 /* ------------------------------------------------------- *
-{
-    "plateNumber": "34ABC123",
-    "brand": "Ford",
-    "model": "Focus",
-    "year": 2020,
-    "isAutomatic": true,
-    "pricePerDay": 249.99
-}
-{
-    "plateNumber": "34ABC234",
-    "brand": "Renault",
-    "model": "Megane",
-    "year": 2022,
-    "isAutomatic": false,
-    "pricePerDay": 199.99
-}
-{
-    "plateNumber": "34ABC345",
-    "brand": "Opel",
-    "model": "Astra",
-    "year": 2021,
-    "isAutomatic": false,
-    "pricePerDay": 189.99,
-    "isAvailable": false
-}
+    {   
+        "_id": "65343222b67e9681f937f521",
+        "name": "BOYNER",
+        "phone": "+90 212 123 45 67",
+        "address": "Maslak, İstanbul, Türkiye",
+        "image": "https://logowik.com/content/uploads/images/242_boyner.jpg"
+    },
+    {
+        "_id": "65343222b67e9681f937f522",
+        "name": "FLO",
+        "phone": "+90 312 234 56 78",
+        "address": "Çankaya, Ankara, Türkiye",
+        "image": "https://logowik.com/content/uploads/images/flo9618.jpg"
+        
+    },
+    {
+        "_id": "65343222b67e9681f937f523",
+        "name": "TRENDYOL",
+        "phone": "+90 216 345 67 89",
+        "address": "Kadıköy, İstanbul, Türkiye",
+        "image": "https://logowik.com/content/uploads/images/trendyolcom2977.jpg"
+    },
 /* ------------------------------------------------------- */
 // Firm Model:
 

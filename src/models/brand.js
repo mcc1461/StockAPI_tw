@@ -4,31 +4,21 @@
 ------------------------------------------------------- */
 const { mongoose } = require('../configs/dbConnection')
 /* ------------------------------------------------------- *
-{
-    "plateNumber": "34ABC123",
-    "brand": "Ford",
-    "model": "Focus",
-    "year": 2020,
-    "isAutomatic": true,
-    "pricePerDay": 249.99
-}
-{
-    "plateNumber": "34ABC234",
-    "brand": "Renault",
-    "model": "Megane",
-    "year": 2022,
-    "isAutomatic": false,
-    "pricePerDay": 199.99
-}
-{
-    "plateNumber": "34ABC345",
-    "brand": "Opel",
-    "model": "Astra",
-    "year": 2021,
-    "isAutomatic": false,
-    "pricePerDay": 189.99,
-    "isAvailable": false
-}
+    {   
+        "_id": "65343222b67e9681f937f512",
+        "name": "Tommy",
+        "image": "https://i.pinimg.com/736x/d3/09/1a/d3091a1a5350fede679b2c7461b0745b.jpg"
+    },
+    {
+        "_id": "65343222b67e9681f937f513",
+        "name": "LG",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LG_symbol.svg/640px-LG_symbol.svg.png"
+    },
+    {
+        "_id": "65343222b67e9681f937f514",
+        "name": "Samsung",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png"
+    },
 /* ------------------------------------------------------- */
 // Brand Model:
 

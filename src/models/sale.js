@@ -4,18 +4,28 @@
 ------------------------------------------------------- */
 const { mongoose } = require('../configs/dbConnection')
 /* ------------------------------------------------------- *
-{
-    "userId": "65343222b67e9681f937f001",
-    "carId": "65352f518a9ea121b1ca5001",
-    "startDate": "2023-10-10",
-    "endDate": "2023-10-16"
-}
-{
-    "userId": "65343222b67e9681f937f002",
-    "carId": "65352f518a9ea121b1ca5002",
-    "startDate": "2023-10-14",
-    "endDate": "2023-10-20"
-}
+    {
+        "_id": "65343222b67e9681f9370001",
+        "userId": "65343222b67e9681f937f511",
+        "firmId": "65343222b67e9681f937f521",
+        "brandId": "65343222b67e9681f937f512",
+        "productId": "65343222b67e9681f937a008", // Correct productId referencing the correct Product
+        "categoryId": "65343222b67e9681f937f52a",
+        "quantity": 3,
+        "price": 12000,
+        "totalPrice": 36000
+    },
+    {
+        "_id": "65343222b67e9681f9370002",
+        "userId": "65343222b67e9681f937f511",
+        "firmId": "65343222b67e9681f937f522",
+        "brandId": "65343222b67e9681f937f518",
+        "productId": "65343222b67e9681f937a010", // Correct productId referencing the correct Product
+        "categoryId": "65343222b67e9681f93aa52f",
+        "quantity": 2,
+        "price": 11000,
+        "totalPrice": 22000
+    },
 /* ------------------------------------------------------- */
 // Sale Model:
 

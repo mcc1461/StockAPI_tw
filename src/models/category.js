@@ -11,8 +11,6 @@ const { mongoose } = require('../configs/dbConnection')
     "name": "Home",
     "name": "Sports",
     
-    
-
 /* ------------------------------------------------------- */
 // Category Model:
 

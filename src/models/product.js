@@ -4,18 +4,29 @@
 ------------------------------------------------------- */
 const { mongoose } = require('../configs/dbConnection')
 /* ------------------------------------------------------- *
-{
-    "userId": "65343222b67e9681f937f001",
-    "carId": "65352f518a9ea121b1ca5001",
-    "startDate": "2023-10-10",
-    "endDate": "2023-10-16"
-}
-{
-    "userId": "65343222b67e9681f937f002",
-    "carId": "65352f518a9ea121b1ca5002",
-    "startDate": "2023-10-14",
-    "endDate": "2023-10-20"
-}
+    {
+        "_id": "65343222b67e9681f937a001",
+        "categoryId": "65343222b67e9681f937f5aa",
+        "brandId": "65343222b67e9681f937f515",
+        "name": "Apple iPhone 12 Pro Max",
+        "quantity": 100,
+        "price": 10000,
+        "description": "Apple iPhone 12 Pro Max 512GB",
+        "image": "https://netrinoimages.s3.eu-west-2.amazonaws.com/2023/11/09/1600268/478455/apple_iphone_12_pro_max_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_4901277.png",
+        "category": "Electronics",
+    },
+    {
+        "_id": "65343222b67e9681f937a002",
+        "categoryId": "65343222b67e9681f937f5aa",
+        "brandId": "65343222b67e9681f937f514",
+        "name": "Samsung Galaxy S21 Ultra",
+        "quantity": 100,  
+        "price": 9000,
+        "description": "Samsung Galaxy S21 Ultra 512GB",
+        "image": "https://m.media-amazon.com/images/I/81r1MQWy8+L.jpg",
+        "category": "Electronics",
+    },
+    
 /* ------------------------------------------------------- */
 // Product Model:
 
