@@ -42,6 +42,11 @@ const SaleSchema = new mongoose.Schema({
         ref: 'Product',
         required: true
     },
+    categoryId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Category',
+        required: true
+    },
 
     price: {
         type: Number,
@@ -55,7 +60,18 @@ const SaleSchema = new mongoose.Schema({
 
     totalPrice: {
         type: Number,
-        required: true
+        // required: true,
+        default: function() {  // Keep the function name only as "function() { ... }" otherwise it will not work.
+            return this.price * this.quantity
+        },
+       //  For update you need to use transform, default will not work here and only works for create not for update.
+       transform: function() { 
+            return this.price * this.quantity
+        },
+        // set gives error so that is not used...
+        // set: function (){
+        //     return this.totalPrice
+        // }
     },
 
     // createdId: {

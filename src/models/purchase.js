@@ -81,7 +81,7 @@ const PurchaseSchema = new mongoose.Schema({
     // }
 }, {
     collection: 'purchases',
-    timestamps: true
+    timestamps: true,
 })
 
 // Export:

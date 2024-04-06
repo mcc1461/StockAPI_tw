@@ -5,6 +5,7 @@
 // Purchase Controller:
 
 const Purchase = require('../models/purchase')
+
 // const User = require('../models/user')
 
 module.exports = {
@@ -24,12 +25,21 @@ module.exports = {
             `
         */
 
+        // const data = await res.getModelList(Purchase, {__v:0 }, [
+        //     { path: "userId", select: "-_id username firstName lastName" },
+        //     { path: "firmId", select: "-_id name" },
+        //     { path: "categoryId", select: " -_id name" },
+        //     { path: "brandId", select: "-_id name" },
+        //   ])
+
         const data = await res.getModelList(Purchase, {}, [
-            { path: "userId", select: "username firstName lastName" },
-            { path: "firmId", select: "name" },
-            { path: "categoryId", select: "name" },
-            { path: "brandId", select: "name" },
-          ])
+            { path: "userId", select: "-_id username" },
+            { path: "productId", select: "-_id name"  },
+            { path: "categoryId", select: "-_id name" },
+            { path: "brandId", select: "-_id name" },
+            { path: "firmId", select: "-_id name" },
+        ]);
+        
 
         res.status(200).send({
             error: false,

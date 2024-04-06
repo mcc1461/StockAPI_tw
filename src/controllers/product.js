@@ -25,6 +25,7 @@ module.exports = {
         */
 
         const data = await res.getModelList(Product)
+        console.log(data)
 
         res.status(200).send({
             error: false,

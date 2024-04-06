@@ -5,6 +5,7 @@
 // Sale Controller:
 
 const Sale = require('../models/sale')
+
 // const User = require('../models/user')
 
 module.exports = {
@@ -24,7 +25,21 @@ module.exports = {
             `
         */
 
-        const data = await res.getModelList(Sale)
+        // const data = await res.getModelList(Sale, {__v:0 }, [
+        //     { path: "userId", select: "-_id username firstName lastName" },
+        //     { path: "firmId", select: "-_id name" },
+        //     { path: "categoryId", select: " -_id name" },
+        //     { path: "brandId", select: "-_id name" },
+        //   ])
+
+        const data = await res.getModelList(Sale, {}, [
+            { path: "userId", select: "-_id username" },
+            { path: "productId", select: "-_id name"  },
+            { path: "categoryId", select: "-_id name" },
+            { path: "brandId", select: "-_id name" },
+            { path: "firmId", select: "-_id name" },
+        ]);
+        
 
         res.status(200).send({
             error: false,
@@ -53,6 +68,8 @@ module.exports = {
        
        const data = await Sale.create(req.body)
        console.log(data)
+       // ilgili product id si bulunarak ilgili modelde quantity azaltılacak. Güncelleme yapılacak.
+       
         res.status(201).send({
             error: false,
             data
